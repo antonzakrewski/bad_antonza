@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -56,7 +54,7 @@ Dann hat jede <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b2
 Seien \(\{b_1,...,b_{n+k}\}\) und \(\{b'_1,...,b'_n\}\) <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basen</a>, so folgt nach dem <a href="20221109113020-austauschsatz_von_steinitz.html#ID-860f3c52-9845-4cae-9b24-ac2a07a653e0">Austauschsatz von Steinitz</a>, dass \(\{b_1,...,b_n\}\) eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a> ist und damit auch:
 </p>
 \begin{align*}
-b_{n+1} \coloneqq \sum_{i=1}^{n} \beta_i b_i 
+b_{n+1}  \coloneqq \sum_{i=1}^{n} \beta_i b_i 
 \end{align*}
 <p>
 was ein <a href="20220902194001-widerspruch.html#ID-d758d8be-c0f8-45d8-b7b4-5d9ecc65476a">Widerspruch</a>  zur <a href="20220207224644-lineare_unabhangigkeit.html#ID-c4d1496f-6012-4ade-8b98-3e29dad89ded">linearen Unabhängkeit</a> ist.

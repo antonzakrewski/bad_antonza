@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -67,7 +65,7 @@ xa_1b_2 =& b_2 (ya_2 + za_3) \\
 -xb_1 =& yb_2 + zb_3 && \vert \cdot a_2 \\
 -xb_1a_2 =& a_2  (yb_2 + zb_3) \\
 x (a_1b_2 - b_1a_2) =& z (a_2b_3 - a_3b_2) \\
-z \coloneqq& (a_1b_2 - b_1a_2)  \\
+z  \coloneqq& (a_1b_2 - b_1a_2)  \\
 \Rightarrow x =& a_2b_3 -a_3b_2 \\
 \end{align*}
 </div>

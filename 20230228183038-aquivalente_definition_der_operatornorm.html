@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -48,7 +46,7 @@ Seien \((V, \| \cdot \|_V)\) und \((W, \| \cdot \|_W)\) zwei <a href="2023022415
 Dann gilt für die <a href="20230228174859-operatornorm.html#ID-0d80a10f-61ee-4f2b-8e7d-09f8e594777f">Operatorhalbnorm</a>:
 </p>
 \begin{align*}
-\| \cdot \|_{V \rightarrow W} \coloneqq& \inf\{C \geq 0 \vert \forall  x \in V : \| L(x)\|_W \leq C \| x \|_V\}
+\| \cdot \|_{V \rightarrow W}  \coloneqq& \inf\{C \geq 0 \vert \forall  x \in V : \| L(x)\|_W \leq C \| x \|_V\}
  =& \sup \{\| L(x)\|_W \vert x \in V, \| x \|_V \leq 1\}
 =& \sup_{\| x \|_V = 1}
 =& \sup_{x \in V \setminus \{0\}} \text{ für echte Norm}

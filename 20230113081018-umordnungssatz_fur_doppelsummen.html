@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -45,7 +43,7 @@ tex: {packages: {'[+]': ['mathtools']}}
 <div class="outline-text-2" id="text-1">
 <p>
 Sei
-\(\sum_{n=0}^{\infty} \left(\sum_{k=0}^{\infty} a_{n,k} \right)\) eine absolute doppelsummenkonvergente(*) Reihe (insbesondere existieren nach annahme die grenzwerte \(b_n \coloneqq \sum_{n=0}^{\infty} a_{n,k}\)), so dass gilt
+\(\sum_{n=0}^{\infty} \left(\sum_{k=0}^{\infty} a_{n,k} \right)\) eine absolute doppelsummenkonvergente(*) Reihe (insbesondere existieren nach annahme die grenzwerte \(b_n  \coloneqq \sum_{n=0}^{\infty} a_{n,k}\)), so dass gilt
 </p>
 \begin{align*}
 \sum_{n=0}^{\infty} \left(\sum_{k=0}^{\infty} a_{n,k} \right) = g
@@ -81,7 +79,7 @@ Beweisskizze:
 <h3 id="org176523d"><span class="section-number-3">2.1.</span> Formal</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
-Sei \(b_n \coloneqq \sum_{k=0}^{\infty} a_{n,k}\).
+Sei \(b_n  \coloneqq \sum_{k=0}^{\infty} a_{n,k}\).
 Wir wissen, dass die Folge \((b_n)\) eine konvergente nullfolge ist, da die Reihe \(\sum_{n=0}^{\infty} b_n\) konvergiert 
 Sei \(\varepsilon > 0\)
 Nach cauchy (und unserer absoluten konvergenz) existiert ein \(n( \frac{\varepsilon}{2})\), so dass

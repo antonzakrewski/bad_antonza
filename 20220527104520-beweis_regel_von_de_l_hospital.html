@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -52,8 +50,8 @@ för \(a \in \mathbb{R} \cup \{-\infty, \infty\}\)
 <h3 id="orgfb929dd"><span class="section-number-3">1.1.</span> \(\lim\left(\frac{0}{0}\right)\)</h3>
 <div class="outline-text-3" id="text-1-1">
 \begin{align*}
-\lim_{x \to a}\left(g(x)\right) \coloneqq& 0 \\
-\lim_{x \to a}\left(f(x)\right) \coloneqq& 0 \\
+\lim_{x \to a}\left(g(x)\right)  \coloneqq& 0 \\
+\lim_{x \to a}\left(f(x)\right)  \coloneqq& 0 \\
 \lim_{x \to a}\left(\frac{g(x)}{f(x)}\right) =& \lim_{x \to a}\left(\frac{g(x) - 0}{f(x) - 0}\right) \\
 =& \lim_{x \to a}\left(\frac{g(x) - g(a)}{f(x) - f(a)}\right) \\
 =& \lim_{x \to a}\left(\frac{\frac{g(x) - g(a)}{x - a}}{\frac{f(x) - f(a)}{x - a}}\right) \\
@@ -65,10 +63,10 @@ för \(a \in \mathbb{R} \cup \{-\infty, \infty\}\)
 <h3 id="org2a6d8a5"><span class="section-number-3">1.2.</span> \(\lim\left(\frac{\infty}{\infty}\right)\)</h3>
 <div class="outline-text-3" id="text-1-2">
 \begin{align*}
-g_i(x) \coloneqq& \frac{1}{g_i(x)} \Rightarrow g_i'(x) = \frac{-1}{g(x)^2} g'(x) \\
-f_i(x) \coloneqq& \frac{1}{f_i(x)} \Rightarrow f_i'(x) = \frac{-1}{f(x)^2} f'(x) \\
-\lim_{x\to a}\left(g(x)\right) \coloneqq& \pm \infty \\
-\lim_{x\to a}\left(f(x)\right) \coloneqq& \pm \infty  \\
+g_i(x)  \coloneqq& \frac{1}{g_i(x)} \Rightarrow g_i'(x) = \frac{-1}{g(x)^2} g'(x) \\
+f_i(x)  \coloneqq& \frac{1}{f_i(x)} \Rightarrow f_i'(x) = \frac{-1}{f(x)^2} f'(x) \\
+\lim_{x\to a}\left(g(x)\right)  \coloneqq& \pm \infty \\
+\lim_{x\to a}\left(f(x)\right)  \coloneqq& \pm \infty  \\
 \Rightarrow \lim_{x \to a}\left(\frac{1}{g(x)}\right) =& \lim_{x \to a}\left(g_i(x)\right) = 0 \\
 \Rightarrow \lim_{x \to a}\left(\frac{1}{f(x)}\right) =& \lim_{x \to a}\left(f_i(x)\right) = 0 \\
 \end{align*}

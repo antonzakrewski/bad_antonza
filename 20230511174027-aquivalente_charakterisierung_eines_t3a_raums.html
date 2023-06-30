@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -49,7 +47,7 @@ Sei \((X, \mathcal{T})\) ein <a href="20220930231339-topologischer_raum.html#ID-
 </p>
 <ol class="org-ol">
 <li>\(X\) ist ein <a href="20230308143801-t3a_raum.html#ID-4c7876f8-c1d5-40d4-93e4-ac1d9fcc9ae0">T3a-Raum</a></li>
-<li>die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(B \coloneqq \{f^{-1}[U] \vert U \subseteq [0,1] \text{ offen }, f: X \rightarrow [0,1] \text{ ist stetig}\}\) ist eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
+<li>die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> \(B  \coloneqq \{f^{-1}[U] \vert U \subseteq [0,1] \text{ offen }, f: X \rightarrow [0,1] \text{ ist stetig}\}\) ist eine <a href="20221030151204-basis_vektorraum.html#ID-4b0d1e47-5503-4b26-9ab3-a142097c2624">Basis</a></li>
 <li>Die Nullstellenmengen <a href="20230112104451-stetigkeit_topologie.html#ID-f46120aa-e40b-4c09-9296-23b0783092a2">stetiger</a> <a href="20220102212818-funktion.html#ID-795be04e-ea83-444e-8bb2-638ed125c97e">Funktionen</a> bilden eine <a href="20230211131931-basis_der_abgeschlossenen_mengen.html#ID-a27e5b1a-13ef-482e-8254-c921689ef21d">Basis der abgeschlossenen Mengen</a></li>
 </ol>
 </div>
@@ -121,7 +119,7 @@ Dann hat folgende Funktion die gewünschte Eigenschaft:
 </p>
 \begin{align*}
 g: X \rightarrow& [0,1] \\
-g(y) \coloneqq 
+g(y)  \coloneqq 
     \begin{cases}
     \mathrm{min}(\frac{f(y)}{f(x)},1) & \mbox{if } f(y) \geq 0 \\
     0 & \mbox{else } \\ 

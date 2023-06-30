@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -48,7 +46,7 @@ Seien \(z = a + b \mathrm{i}\) und \(z' = a' + b' \mathrm{i}\) <a href="20210702
 Dann ist die <a href="20210618084656-addition.html#ID-d9bb4990-4623-4957-bf16-ff3483acb12c">Addition</a> folgendermaßen (<a href="20211230231122-komponentweise_algebra.html#ID-c836a51b-7c63-421d-a20d-edb77934cdcd">komponentweise</a>) definiert:
 </p>
 \begin{align*}
-z + z' \coloneqq (a,b) + (a',b) \coloneqq& (a+a', b+b') \\
+z + z'  \coloneqq (a,b) + (a',b)  \coloneqq& (a+a', b+b') \\
 =& a+a' + \mathrm{i}(b+b')
 \end{align*}
 <p>

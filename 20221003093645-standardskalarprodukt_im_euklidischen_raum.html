@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -49,7 +47,7 @@ Dann ist das Skalarprodukt für zwei <a href="20210217215228-vektor.html#ID-be50
 </p>
 \begin{align*}
 \langle , \rangle : \mathbb{R}^n \times \mathbb{R}^n \rightarrow& \mathbb{R} \\
-(\vec{a}, \vec{b}) \mapsto& \langle \vec{a} ,\vec{b} \rangle \coloneqq \sum_{i=1}^n a^ib^i
+(\vec{a}, \vec{b}) \mapsto& \langle \vec{a} ,\vec{b} \rangle  \coloneqq \sum_{i=1}^n a^ib^i
 \end{align*}
 <p>
 bzw. mit <a href="20221009130718-kronecker_delta.html#ID-82f0b7a3-d217-4e5b-97e9-3f0b1fbe7e52">Kronecker-Delta</a> ausgedrückt:

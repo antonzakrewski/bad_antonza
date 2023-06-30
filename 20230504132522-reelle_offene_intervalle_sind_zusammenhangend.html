@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -63,11 +61,11 @@ Dann existieren \(x \in A, y \in B\) mit <a href="20220306182550-o_b_d_a.html#ID
 Betrachten wir die <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a>:
 </p>
 \begin{align*}
-A' \coloneqq \{a' \in A \vert [x,a') \subseteq A\}
+A'  \coloneqq \{a' \in A \vert [x,a') \subseteq A\}
 \end{align*}
 <p>
 Diese ist <a href="20220902125304-nichtleere_menge.html#ID-119fa0d9-a2b3-4b46-bb61-a6e590282321">nichtleer</a>, da \([x,x) = \emptyset \subseteq A\) und somit \(x \in A'\) gilt und <a href="20230418124304-beschrankter_metrischer_raum.html#ID-a582443e-422f-45f5-8df6-eed57c5a2366">beschränkt</a> durch \(b \not\in (a,b) \supsetneq A \supseteq A'\)
-Damit existiert nach dem <a href="20221112154250-supremumsaxiom.html#ID-d844b9e7-b58a-484d-9fa5-4b2fed37cf66">Supremumsaxiom</a> ein <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">supremum</a> \(s \coloneqq \sup A'\) 
+Damit existiert nach dem <a href="20221112154250-supremumsaxiom.html#ID-d844b9e7-b58a-484d-9fa5-4b2fed37cf66">Supremumsaxiom</a> ein <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">supremum</a> \(s  \coloneqq \sup A'\) 
 Nach Annahme ist \(s \in A \lor s \in B\)
 Sei \(s \in A\), so gilt für alle \(\varepsilon > 0\), dass \([s, s + \varepsilon) \not\subseteq A\) gilt, da sonst \(s + \varepsilon\) das <a href="20220718133117-supremum.html#ID-0694ad6d-ce06-4c52-9f5c-29b040425dd1">Supremum</a> wäre und somit \(A\) nicht <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a>, Widerspruch.
 Sei \(s \in B\), so gilt für alle \(\varepsilon > 0\), dass \((s-\varepsilon,s] \not\subseteq B\) gilt, da \(s - \varepsilon \in A\) gilt.

@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -48,7 +46,7 @@ Sei \(R[X]\) ein <a href="20220303185921-polynomring.html#ID-1a010da5-5e8a-407f-
 Dann ist die <a href="20210618082003-multiplikation.html#ID-040e85c2-7bda-4c97-956d-2c65ab4533e3">Multiplikation</a> als <a href="20221013223546-konvolution.html#ID-9d82cec8-3f76-468d-9010-a82073495519">Konvolution</a> folgendermaßen definiert:
 </p>
 \begin{align*}
-(a_i)_{i\in \mathbb{N}_0 } \cdot (b_i)_{i \in \mathbb{N}_0} \coloneqq& \left( \sum_{i=0}^{k} a_ib_{k-i} \right)_{k \in \mathbb{N}_0}
+(a_i)_{i\in \mathbb{N}_0 } \cdot (b_i)_{i \in \mathbb{N}_0}  \coloneqq& \left( \sum_{i=0}^{k} a_ib_{k-i} \right)_{k \in \mathbb{N}_0}
 \end{align*}
 </div>
 </div>

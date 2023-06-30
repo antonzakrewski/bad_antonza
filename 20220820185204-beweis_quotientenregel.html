@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -44,7 +42,7 @@ tex: {packages: {'[+]': ['mathtools']}}
 <h2 id="org8ac12e9"><span class="section-number-2">1.</span> Satz</h2>
 <div class="outline-text-2" id="text-1">
 \begin{align*}
-f(x) \coloneqq& \frac{g(x)}{h(x)} \\
+f(x)  \coloneqq& \frac{g(x)}{h(x)} \\
 \Rightarrow f'(x) =& \frac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h(x)^2}
 \end{align*}
 </div>
@@ -60,7 +58,7 @@ f(x) \coloneqq& \frac{g(x)}{h(x)} \\
 \left(\frac{1}{h(x)}\right)' =& -\frac{1}{h(x)^2} \cdot h'(x)
 \end{align*}
 \begin{align*}
-f(x) \coloneqq& \frac{g(x)}{h(x)} \\
+f(x)  \coloneqq& \frac{g(x)}{h(x)} \\
 =& g(x) \cdot \frac{1}{h(x)} \\
 =& g(x) \cdot \left(\frac{1}{h(x)}\right)' + g'(x) \cdot \frac{1}{h(x)} \\
 =& g(x) \cdot -\frac{h'(x)}{h(x)^2} + \frac{g'(x) \cdot h(x)}{h(x) \cdot h(x)} \\
