@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -53,7 +51,7 @@ Dann ist \(\{m\} \subseteq M\) für ein \(m \in M\) <a href="20221125122314-abge
 <h2 id="org962e344"><span class="section-number-2">2.</span> Beweis</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Für jedes \(n \in M \setminus \{m\}\) wähle man für die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> als <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> den Radius \(r_n := \frac{d(m,n)}{2} > 0\) und <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">vereinige</a> diese zu \(O \coloneqq \bigcup_{n \in M \setminus \{m\}} B_{r_n}(n)\)
+Für jedes \(n \in M \setminus \{m\}\) wähle man für die <a href="20221027092741-epsilon_umgebung.html#ID-b8422ae4-c20f-468f-8f66-aa736833f806">epsilon-Umgebung</a> als <a href="20221002145550-offene_menge_in_einem_metrischen_raum.html#ID-48a9cdb7-4398-449e-b008-2c0fe06b2d00">offene</a> <a href="20211008171333-menge.html#ID-30e3fc7a-7374-41d5-80da-a1dae2add239">Menge</a> den Radius \(r_n := \frac{d(m,n)}{2} > 0\) und <a href="20230317161154-allgemeine_vereinigung.html#ID-69c0d505-311b-4ea6-a337-8450d6529d02">vereinige</a> diese zu \(O  \coloneqq \bigcup_{n \in M \setminus \{m\}} B_{r_n}(n)\)
 Wegen der <a href="20230227171137-offenheit_der_vereinigung_offener_mengen_metrischer_raum.html#ID-ea1add61-b287-4798-86a5-4176d1cffd57">Offenheit der Vereinigung offener Mengen</a> ist diese Vereinigung <a href="20221002145641-offene_menge_in_einem_topologischen_raum.html#ID-7828c2e9-b794-4807-acdf-4663517c6c16">offen</a> und nach Konstruktion auch \(M \setminus \{m\}\):
 Angenommen \(m \in O\), so existiert ein \(n \in M\) mit \(m \in B_{ \frac{d(m,n)}{2}}(n)\) d.h. \(0 < d(m,n) \leq \frac{1}{2} d(m,n) \leq d(m,n)\), was ein Widerspruch ist
 \(O \supseteq M \setminus \{m\}\) folgt wegen der Vereinigung über \(n \in M \setminus \{m\}\)

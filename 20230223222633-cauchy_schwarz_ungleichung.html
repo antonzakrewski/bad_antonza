@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -71,7 +69,7 @@ Dann folgt \(\vert \langle v_1, v_2\rangle \vert = \vert 0 \cdot \langle v_1, v_
 Sei
 </p>
 \begin{align*}
-v_3 \coloneqq v_2 - \frac{(v_2,v_1)}{\| v_1 \|} v_1
+v_3  \coloneqq v_2 - \frac{(v_2,v_1)}{\| v_1 \|} v_1
 \end{align*}
 <p>
 Dann gilt

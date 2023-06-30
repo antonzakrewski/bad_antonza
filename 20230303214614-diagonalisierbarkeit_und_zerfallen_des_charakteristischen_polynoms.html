@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -77,7 +75,7 @@ Sei \(\overline{A}\) die <a href="20230508150838-diagonalmatrix.html#ID-67a3d409
 <h3 id="org75b0d9c"><span class="section-number-3">2.2.</span> b) Zerfallen \(\Rightarrow\) diagonalisierbar</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
-Sei \(f_A \coloneqq \prod_{i=1}^r (x - \alpha_i)^{n_i}\) mit \(\alpha_1,...,\alpha_r\) als verschiedene <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a> von \(A\) und \(\mathrm{dim}_{K}V(\alpha_i)= v(A,\alpha_i) = n_i\) für \(i \in \{1,..,r\}\).
+Sei \(f_A  \coloneqq \prod_{i=1}^r (x - \alpha_i)^{n_i}\) mit \(\alpha_1,...,\alpha_r\) als verschiedene <a href="20220303190024-eigenwert.html#ID-c96ef2bb-2cf6-4ca8-9d98-40991bd99031">Eigenwerte</a> von \(A\) und \(\mathrm{dim}_{K}V(\alpha_i)= v(A,\alpha_i) = n_i\) für \(i \in \{1,..,r\}\).
 Für den <a href="20221009092955-unterraum.html#ID-854e21c6-b2ac-4d8c-b859-7797b3ddb35e">Untervektorraum</a> \(U = \bigoplus_{i=1}^r V(\alpha_i) \subseteq V\) ist dann \(\mathrm{dim}_{k}(U) = \sum_{i=1}^{r} n_i = \mathrm{deg}(f_A) = n\) und damit gilt dann:
 </p>
 \begin{align*}
