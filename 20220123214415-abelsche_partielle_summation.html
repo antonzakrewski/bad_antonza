@@ -9,11 +9,9 @@
 <meta name="author" content="Anton Zakrewski" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script>
-window.MathJax = {
-loader: {load: ['[tex]/mathtools']},
-tex: {packages: {'[+]': ['mathtools']}}
-};
+<script src="mathjax-config.js" defer></script>
+<script type="text/javascript" id="MathJax-script" defer
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -47,8 +45,8 @@ tex: {packages: {'[+]': ['mathtools']}}
 Seien \(a_0,a_1,...,a_n\) und \(b_0,b_1,...,b_n\) reelle Zahlen und
 </p>
 \begin{align*}
-A_k \coloneqq \sum_{i=0}^k a_i \\
-B_k \coloneqq \sum_{i=0}^k b_i \\
+A_k  \coloneqq \sum_{i=0}^k a_i \\
+B_k  \coloneqq \sum_{i=0}^k b_i \\
 \text{für }k = 0,1,...,n
 \end{align*}
 \begin{align*}
