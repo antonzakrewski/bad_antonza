@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Symmetrische Gruppe nicht abelsch</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Symmetrische Gruppe nicht abelsch</h1>
+<div id="outline-container-org48a48bf" class="outline-2">
+<h2 id="org48a48bf"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(S_n\) die <a href="20221211194814-symmetrische_gruppe.html#ID-00bbd65b-c459-408d-a83c-306dee28d2f6">Symmetrische Gruppe</a>.
+\(S_n\) ist <a href="20211008174655-abelsche_gruppe.html#ID-7281c9cf-564f-4c4c-8c3f-fc1424ac85f8">abelsch</a> <a href="20221208111336-g_d_w.html#ID-a1245369-4879-458c-aec3-e2905bfa6306">g.d.w.</a> \(n \geq 3\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2d58b1" class="outline-2">
+<h2 id="orgc2d58b1"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org6c98f4a" class="outline-3">
+<h3 id="org6c98f4a"><span class="section-number-3">2.1.</span> \(n \leq 2\)</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+für \(n = 1\) existiert bloß die <a href="20220928131442-identitatsabbildung.html#ID-82204cd3-d2c2-48a7-91fe-4b42e9884bda">Identitätsabbildung</a> als <a href="20210702074906-neutrales_element_mathe.html#ID-2a95aac8-42e6-4724-9f37-15f6143a35ca">Neutrales Element</a>, folglich trivial
+Für \(n = 2\) existiert noch die <a href="20221211214007-transposition_kombinatorik.html#ID-2b1bc9e1-a857-4e1a-9927-02d30418930d">Transposition</a> als <a href="20221117174105-involution.html#ID-e9795aac-cbbe-463c-a3a3-f9bee013e007">Involution</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org6c49730" class="outline-3">
+<h3 id="org6c49730"><span class="section-number-3">2.2.</span> \(n > 2\)</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Sei \(\{1,...,n\}\)
+Die <a href="20211230205349-abbildung_mengenlehre.html#ID-5b676c12-559b-4196-9d8d-eac358db0884">Abbildungen</a> 
+</p>
+\begin{align*}
+f(n) =&
+\begin{cases}
+3 & \mbox{if } n = 2  \\
+2 & \mbox{if } n = 1  \\
+1 & \mbox{if } n = 3 \\
+n & \mbox{else } 
+\end{cases} \\
+g(n) =&
+\begin{cases}
+3 & \mbox{if } n = 1  \\
+2 & \mbox{if } n = 3  \\
+1 & \mbox{if } n = 2 \\
+n & \mbox{else } 
+\end{cases} \\
+\end{align*}
+<p>
+gilt:
+</p>
+\begin{align*}
+(f \circ g)(1) =& f(3) \\
+=& 2 \\
+(g \circ f)(1) =& g(1) \\
+=& 3
+\Rightarrow f \circ g \neq g \circ f
+\end{align*}
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

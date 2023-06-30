@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Doppelsumme</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Doppelsumme</h1>
+
+<div id="outline-container-org6e78d03" class="outline-2">
+<h2 id="org6e78d03"><span class="section-number-2">1.</span> Definition</h2>
+<div class="outline-text-2" id="text-1">
+\begin{align*}
+\sum_{k_1=m_1}^{n_1} \sum_{k_2=m_2}^{n_2+1} a_{k_{1}k_2} \coloneqq \sum_{k_1=m_1}^{n_1} \left( \left( \sum_{k_2=m_2}^{n_2}  a_{k_{1}k_2}\right) + a_{k_{1}n+1}\right) \\
+% \sum_{m_1 \leq k_1 \leq n_1} \sum_{m_2 \leq k_2 \leq n_2 + 1} a_{k_1k_2}  \coloneqq \sum_{k_1=m_1}^{n_1} \sum_{k_2=m_2}^{n_2+1} a_{k_{1}k_2} 
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org2d5b320" class="outline-2">
+<h2 id="org2d5b320"><span class="section-number-2">2.</span> Beispiele</h2>
+<div class="outline-text-2" id="text-2">
+\begin{align*}
+\sum_{1 \leq k \leq 2} \sum_{1 \leq h \leq 2} a_{kh} =& (a_{11} + a_{12}) + (a_{21} + a_{22})
+% \sum_{1\leq k \leq 3,\, 1\leq h\leq 3} a_{kh} =& \sum_{1 \leq k \leq 3} \sum_{1 \leq h \leq 3} a_{kh} \\
+% \sum_{1\leq k,h \leq 3} a_{kh} =& \sum_{1\leq k \leq 3,\, 1\leq h\leq 3} a_{kh} 
+\end{align*}
+</div>
+<div id="outline-container-orged1a4b2" class="outline-3">
+<h3 id="orged1a4b2"><span class="section-number-3">2.1.</span> <a href="20220105121446-kommutativitat_doppelsumme.html#ID-27400610-3e2e-452b-8204-a735d975c705">Kommutativität Doppelsumme</a></h3>
+</div>
+<div id="outline-container-orgc282855" class="outline-3">
+<h3 id="orgc282855"><span class="section-number-3">2.2.</span> <a href="20220105122254-distributivitat_doppelsumme.html#ID-7f4ca35d-a312-4aca-bb5a-9799179fdf41">Distributivität Doppelsumme</a></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<a href="&amp;beutelspacher2003lineare">&amp;beutelspacher2003lineare</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

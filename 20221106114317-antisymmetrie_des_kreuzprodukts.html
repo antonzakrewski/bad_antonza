@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Antisymmetrie des Kreuzprodukts</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Antisymmetrie des Kreuzprodukts</h1>
+<div id="outline-container-org3442273" class="outline-2">
+<h2 id="org3442273"><span class="section-number-2">1.</span> Theorem</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Seien \(\vec{a},\vec{b} \in \mathbb{R}^3\)
+Dann gilt:
+</p>
+\begin{align*}
+\vec{a} \times \vec{b} =& - (\vec{a} \times \vec{b})
+\end{align*}
+</div>
+</div>
+<div id="outline-container-org41060fa" class="outline-2">
+<h2 id="org41060fa"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Seien
+</p>
+\begin{align*}
+\vec{a} =& \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix} \\ 
+\vec{b} =& \begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix}
+\end{align*}
+<p>
+Dann gilt:
+</p>
+\begin{align*}
+\vec{a} \times \vec{b} =& \begin{pmatrix} a_2b_3 - a_3b_2 \\ a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1  \end{pmatrix} \\
+=&  - \begin{pmatrix} b_2a_3 - b_3a_2 \\ b_3a_1 - b_1a_3 \\ b_1a_2 - b_2a_1 \end{pmatrix} \\
+=& - (\vec{b} \times \vec{a})
+\end{align*}
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

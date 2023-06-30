@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Herleitung: Koordinatenform</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Herleitung: Koordinatenform</h1>
+<div id="outline-container-orgcafc78e" class="outline-2">
+<h2 id="orgcafc78e"><span class="section-number-2">1.</span> Herleitung</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sei \(E = (\vec{A}, \vec{n})\) eine <a href="20220102143805-ebene.html#ID-9910f26c-7642-4457-a277-fff78834421c">Ebene</a> in <a href="20220214124828-normalenform_darstellung_einer_ebene.html#ID-fdb46612-81b5-461c-834e-b507814f44e6">Normalenform</a>.
+Aufgrund des <a href="20220506172706-distributivgesetz_skalarprodukt.html#ID-5af215dd-0015-4a2a-9563-902cb9cacbb5">Distributivgesetzes</a> für das <a href="20210217215423-skalarprodukt.html#ID-23a631d3-ff22-47c2-81d3-3b63ad9b57f6">Skalarprodukt</a> gilt:
+</p>
+\begin{align*}
+\left(\vec{P} - \vec{A}\right) \circ \vec{n} =& \left(\vec{n} \circ \vec{P}\right) - \left(\vec{A} \circ \vec{n}\right)
+\end{align*}
+<p>
+Durch Anwendung des <a href="20210217215423-skalarprodukt.html#ID-23a631d3-ff22-47c2-81d3-3b63ad9b57f6">Skalarprodukts</a> folgt: 
+</p>
+\begin{align*}
+\vec{P} :&= \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}  \\
+c :&= - \vec{A} \circ \vec{n} \\
+\Rightarrow E :& a_1 x_1 + a_2 x_2 + a_3 x_3 + c = 0
+\end{align*}
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

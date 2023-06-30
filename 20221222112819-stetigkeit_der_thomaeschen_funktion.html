@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stetigkeit der Thomaeschen Funktion</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Stetigkeit der Thomaeschen Funktion</h1>
+<div id="outline-container-orgfd4eaa5" class="outline-2">
+<h2 id="orgfd4eaa5"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Die <a href="20221222112734-thomaesche_funktion.html#ID-e373912f-153d-44c9-804f-f63e71433bb0">Thomaesche Funktion</a> ist auf allen rationalen Punkten unstetig, und auf allen irrationalen punkten <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetig</a> 
+</p>
+</div>
+</div>
+<div id="outline-container-org5803626" class="outline-2">
+<h2 id="org5803626"><span class="section-number-2">2.</span> Beweisskizze</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0105df0" class="outline-3">
+<h3 id="org0105df0"><span class="section-number-3">2.1.</span> <a href="20220819232419-stetigkeit.html#ID-b2d86612-ee0d-43a3-b49c-6953d712ecc5">stetigkeit</a></h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Sei \(r \in \mathbb{R} \setminus \mathbb{Q}\).
+Dann existiert eine Approximation \(\frac{p_n}{q_n} \rightarrow r\) und sei <a href="20220306182550-o_b_d_a.html#ID-e58125c9-5f34-4043-bf52-23ecb4c20f2e">o.B.d.A.</a>  die <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folgenglieder</a> jeweils vollständig gekürzt
+Es folgt dann \(q_n \rightarrow \infty\) und damit auch \(f(\frac{p_n}{q_n}) = \frac{1}{q_n} \rightarrow 0\)
+</p>
+</div>
+</div>
+<div id="outline-container-org5e50dde" class="outline-3">
+<h3 id="org5e50dde"><span class="section-number-3">2.2.</span> unstetig</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Sei \(\frac{p}{q}\) fest, dann gilt insbesondere \(f(\frac{p}{q}) = \frac{1}{q} > 0\).
+sei $ \frac{p}{q} + \frac{1}{n} &rarr; \frac{p}{q}$ eine <a href="20211222222916-folge_mathe.html#ID-dcb01772-a373-427f-99a6-5bd48bf9e042">Folge</a> es gilt für \(\lim_{n \to \infty}\left(\inf f(\frac{p}{q} + \frac{1}{n})\right) = 0 \neq \frac{1}{q}\)
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>

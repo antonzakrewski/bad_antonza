@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Abschätzung des Produkts gegenüber der Summe der Quadrate</title>
+<meta name="author" content="Anton Zakrewski" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script>
+window.MathJax = {
+loader: {load: ['[tex]/mathtools']},
+tex: {packages: {'[+]': ['mathtools']}}
+};
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Abschätzung des Produkts gegenüber der Summe der Quadrate</h1>
+<div id="outline-container-orgf2653fc" class="outline-2">
+<h2 id="orgf2653fc"><span class="section-number-2">1.</span> Satz</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Seien \(x,y \in \mathbb{R}\), so gilt
+</p>
+\begin{align*}
+x^2 + y^2 \geq 2xy
+\end{align*}
+</div>
+</div>
+<div id="outline-container-orgb8275be" class="outline-2">
+<h2 id="orgb8275be"><span class="section-number-2">2.</span> Beweis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Nach der <a href="20220303130959-2_binomische_formel.html#ID-f30ea124-6142-4dab-9670-89846275e4dd">2. binomische Formel</a> gilt:
+</p>
+\begin{align*}
+(x - y)^2 =& x^2 + y^2 - 2xy
+\end{align*}
+<p>
+gleichzeitig gilt aber, da das <a href="20220120125008-quadrat_positiv_anordnungsaxiome.html#ID-b079ab42-d6e7-4682-b03b-af5693ac5320">Quadrat positiv</a> ist
+</p>
+\begin{align*}
+(x-y)^2 \geq& 0
+x^2 + y^2 - 2xy \geq& 0
+x^2 + y^2  \geq& + 2xy
+\end{align*}
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Anton Zakrewski</p>
+<p class="email">Email: <a href="mailto:anton.zakrewski@campus.lmu.de">anton.zakrewski@campus.lmu.de</a></p>
+</div>
+</body>
+</html>
